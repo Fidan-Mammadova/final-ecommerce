@@ -240,13 +240,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
-
-
 // /**
 //  * Получить корзину пользователя с сервера по username
 //  * @param {string} username
