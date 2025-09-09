@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const products = JSON.parse(localStorage.getItem("products")) || [];
     const staticProducts = [
-      { id: 1, model: "Calcius Magnesium plus", price: 19.99, rating: 5, imageUrl: "https://cdn.dsmcdn.com/mnresize/1200/1800/ty1582/prod/QC/20241009/11/9974e13d-ad2a-332b-b116-ad5f7e1ba7a7/1_org_zoom.jpg", category: "Vitamins", description: "Calcium & Magnesium supplement." },
+      { id: 1, model: "Calcius Magnesium plus", price: 19.99, rating: 5, 
+        imageUrl: "https://cdn.dsmcdn.com/mnresize/1200/1800/ty1582/prod/QC/20241009/11/9974e13d-ad2a-332b-b116-ad5f7e1ba7a7/1_org_zoom.jpg",
+         category: "Vitamins", description: "Calcium & Magnesium supplement." },
       { id: 2, model: "Biotin 5000 Mg 50 K", price: 89.99, rating: 4, imageUrl: "https://cdn.dsmcdn.com/mnresize/1200/1800/ty1582/prod/QC/20241009/11/b10cec6e-992a-3264-8ca1-1cac8fe35708/1_org_zoom.jpg", category: "Vitamins", description: "Supports hair and nail growth." },
       { id: 3, model: "Vitamin D3 1000 iu", price: 79.99, rating: 5, imageUrl: "https://cdn.dsmcdn.com/mnresize/1200/1800/ty1641/prod/QC/20250221/14/01094d46-50e1-379d-bd38-4a074521c06a/1_org_zoom.jpg", category: "Vitamins", description: "Supports hair and nail growth." },
       { id: 4, model: "Magnesium Citrate", price: 79.99, rating: 5, imageUrl: "https://cdn.dsmcdn.com/mnresize/1200/1800/ty1544/product/media/images/ty1543/prod/QC/20240914/18/12c65036-70dd-369d-ad75-c5bab0c9a705/1_org_zoom.jpg", category: "Minerals", description: "Supports hair and nail growth." },

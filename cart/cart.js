@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
 
+
+    
     function saveCart() {
       localStorage.setItem(userCartKey, JSON.stringify(cart));
       localStorage.setItem("cart", JSON.stringify(cart)); // временно, для совместимости

@@ -1,6 +1,4 @@
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
   const usernameDisplay = document.getElementById('usernameDisplay');
@@ -71,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
+
   function filterProducts() {
       const searchText = searchInput.value.toLowerCase();
       const activeCategory = document.querySelector(".list-group-item.active")?.textContent || "All";
@@ -97,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const products = JSON.parse(localStorage.getItem("products")) || [];
 
-  
   function renderProducts() {
     products.forEach(product => {
       const rating = Number(product.rating) || 0;
@@ -124,17 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   
-  renderProducts();
+  renderProducts(); 
   
   // Сохраняем продукты, если их нет
   if (!localStorage.getItem("products")) {
     localStorage.setItem("products", JSON.stringify(products));
   }
   
-
-
-
-
 
 
   function sortProducts(order) {
@@ -171,6 +165,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
 sortDropdown.addEventListener("change", function () {
   if (this.value) {
       sortProducts(this.value);
@@ -199,10 +195,6 @@ sortDropdown.addEventListener("change", function () {
 
   updateProductRatings(); // Обновляем рейтинги при загрузке
 });
-
-
-
-
 
 
 
@@ -236,6 +228,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+
+
+
+
 
 
 
